@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="wrap {% if page.wide %}wrap--wide{% endif %}">
+  {%- if page.title and page.hide_title != true %}
+  <h1>{{ page.title }}</h1>
+  {%- endif %}
+  {%- if page.subtitle %}
+  <p class="hero__role">{{ page.subtitle }}</p>
+  {%- endif %}
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</div>

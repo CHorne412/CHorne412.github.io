@@ -1,0 +1,74 @@
+# ─────────────────────────────────────────────────────────────
+#  EDIT THIS FILE FIRST. Everything below feeds the whole site.
+# ─────────────────────────────────────────────────────────────
+
+# --- Identity -------------------------------------------------
+title:    Your Name
+tagline:  Software Engineer
+email:    chussyk@gmail.com
+location: City, Country
+
+# Short blurb used in <meta description> and social cards.
+description: >-
+  Software engineer working on backend systems, developer tooling,
+  and the occasional side project. Writing about what I learn.
+
+# --- URLs -----------------------------------------------------
+# For a USER site (repo named <username>.github.io):
+#   url: "https://<username>.github.io"
+#   baseurl: ""
+# For a PROJECT site (repo named e.g. "portfolio"):
+#   url: "https://<username>.github.io"
+#   baseurl: "/portfolio"
+url: "https://chorne412.github.io"
+baseurl: ""
+
+# --- Social / profiles ---------------------------------------
+# Comment out any line you don't want shown.
+social:
+  github:   CHorne412
+  # Uncomment and set your handle. Commented-out lines render no link at all,
+  # which is better than shipping one that 404s.
+  # linkedin: your-handle
+  # x:      username
+  # bluesky: username.bsky.social
+  # mastodon: "https://hachyderm.io/@username"
+
+# Uncomment once you've actually put a PDF at assets/resume.pdf (or point it
+# at an external link). While it's commented out, no resume link is rendered —
+# that's deliberate, so the site never ships a link to a missing file.
+# resume_url: "/assets/resume.pdf"
+
+# --- Build ----------------------------------------------------
+plugins:
+  - jekyll-feed      # generates /feed.xml
+  - jekyll-seo-tag   # <title>, og:, twitter: meta tags
+  - jekyll-sitemap   # generates /sitemap.xml
+
+permalink: /blog/:title/
+timezone: America/New_York
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+feed:
+  path: feed.xml
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .sass-cache
+  - node_modules
+
+sass:
+  style: compressed

@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<div class="wrap wrap--wide">
+
+  <section class="hero">
+    <h1 class="hero__name">{{ site.title }}</h1>
+    <p class="hero__role">{{ site.tagline }}{% if site.location %} &nbsp;·&nbsp; {{ site.location }}{% endif %}</p>
+
+    <div class="hero__bio">
+      <p>
+        I build backend systems and the tools that keep them honest — currently
+        focused on distributed data pipelines and developer experience. Before
+        that I spent a few years making slow things fast.
+      </p>
+      <p>
+        I like problems where the constraint is real: a latency budget, a
+        migration that can't take downtime, an API that a hundred other teams
+        depend on. I write about those here.
+      </p>
+    </div>
+
+    <div class="actions">
+      <a class="btn btn--primary" href="mailto:{{ site.email }}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/>
+        </svg>
+        Get in touch
+      </a>
+      {%- if site.resume_url %}
+      <a class="btn" href="{{ site.resume_url | relative_url }}">Résumé</a>
+      {%- endif %}
+      {%- if site.social.github %}
+      <a class="btn" href="https://github.com/{{ site.social.github }}">GitHub</a>
+      {%- endif %}
+      {%- if site.social.linkedin %}
+      <a class="btn" href="https://www.linkedin.com/in/{{ site.social.linkedin }}">LinkedIn</a>
+      {%- endif %}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>Selected work</h2>
+      <a href="{{ '/projects/' | relative_url }}">All projects &rarr;</a>
+    </div>
+
+    <div class="projects projects--grid">
+      {%- assign featured = site.data.projects | where: "featured", true -%}
+      {%- for project in featured %}
+        {% include project-card.html project=project %}
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <h2>Writing</h2>
+      <a href="{{ '/blog/' | relative_url }}">All posts &rarr;</a>
+    </div>
+
+    <ul class="posts">
+      {%- for post in site.posts limit: 4 %}
+        {% include post-item.html post=post %}
+      {%- endfor %}
+    </ul>
+  </section>
+
+</div>

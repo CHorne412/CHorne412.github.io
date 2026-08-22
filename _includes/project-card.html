@@ -1,0 +1,29 @@
+{%- comment -%}
+  Renders one project card.
+  Usage: {% include project-card.html project=item %}
+  Data shape: see _data/projects.yml
+{%- endcomment -%}
+<article class="card">
+  <h3 class="card__title">
+    {%- if include.project.url -%}
+      <a href="{{ include.project.url }}">{{ include.project.name }}</a>
+    {%- else -%}
+      {{ include.project.name }}
+    {%- endif -%}
+  </h3>
+
+  <p class="card__desc">{{ include.project.description }}</p>
+
+  <div class="card__foot">
+    {%- if include.project.tech -%}
+    <ul class="tags">
+      {%- for t in include.project.tech %}<li class="tag">{{ t }}</li>{% endfor -%}
+    </ul>
+    {%- endif -%}
+
+    <div class="links">
+      {%- if include.project.repo %}<a href="{{ include.project.repo }}">Code&nbsp;&rarr;</a>{% endif -%}
+      {%- if include.project.demo %}<a href="{{ include.project.demo }}">Live&nbsp;&rarr;</a>{% endif -%}
+    </div>
+  </div>
+</article>
