@@ -12,6 +12,10 @@ permalink: /projects/
     <a href="{{ '/blog/' | relative_url }}">blog</a> go deeper on the parts that were hard.
   </p>
 
+  {%- if site.data.projects.size == 0 %}
+  <p style="color:var(--text-muted)">Nothing listed yet — I'm adding projects as I finish them.</p>
+  {%- endif %}
+
   {%- assign by_year = site.data.projects | sort: "year" | reverse -%}
   {%- assign current_year = "" -%}
 

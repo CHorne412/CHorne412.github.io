@@ -9,14 +9,13 @@ layout: default
 
     <div class="hero__bio">
       <p>
-        I build backend systems and the tools that keep them honest — currently
-        focused on distributed data pipelines and developer experience. Before
-        that I spent a few years making slow things fast.
+        I'm a student at West Virginia University, based in the Pittsburgh area,
+        working toward a career in software engineering.
       </p>
       <p>
-        I like problems where the constraint is real: a latency budget, a
-        migration that can't take downtime, an API that a hundred other teams
-        depend on. I write about those here.
+        I'm looking for a full-time software engineering role starting after I
+        graduate. This is where I collect what I build and what I'm learning
+        along the way.
       </p>
     </div>
 
@@ -50,6 +49,9 @@ layout: default
       {%- for project in featured %}
         {% include project-card.html project=project %}
       {%- endfor %}
+      {%- if featured.size == 0 %}
+        <p style="color:var(--text-muted)">Projects are on the way — I'm building this out now.</p>
+      {%- endif %}
     </div>
   </section>
 
@@ -64,6 +66,9 @@ layout: default
         {% include post-item.html post=post %}
       {%- endfor %}
     </ul>
+    {%- if site.posts.size == 0 %}
+    <p style="color:var(--text-muted)">First post coming soon.</p>
+    {%- endif %}
   </section>
 
 </div>

@@ -1,64 +1,21 @@
-# Every project on the site lives here. Add an entry, it appears on the page.
-# Fields:
-#   name        (required)
-#   description (required) one or two sentences, plain English
-#   tech        list of tags shown as chips
-#   repo        link to source
-#   demo        link to a live deployment
-#   url         where the card title links (defaults to nothing)
-#   year        used for ordering / display
-#   featured    true = also shown on the homepage
+# Your portfolio lives here. Add an entry, a card appears on /projects/ — and
+# on the homepage too if you set `featured: true`.
+#
+# Only list things that exist. Coursework and half-finished side projects are
+# completely fair game; invented ones are not.
+#
+# Copy this block for each project:
+#
+# - name: Project name
+#   description: >-
+#     One or two sentences, plain English: what it does, and what was actually
+#     hard about building it.
+#   tech: [Python, Postgres]          # shown as small chips
+#   repo: https://github.com/CHorne412/project-name
+#   demo: https://example.com          # optional, omit if there isn't one
+#   url:  https://github.com/CHorne412/project-name   # where the title links
+#   year: 2026
+#   featured: true                     # also show on the homepage
 
-- name: Ledgerline
-  description: >-
-    A double-entry accounting engine with an HTTP API. Handles ~2k
-    transactions/sec on a single Postgres instance; the interesting part is the
-    idempotency layer that makes retries safe end to end.
-  tech: [Go, Postgres, Docker]
-  repo: https://github.com/CHorne412/ledgerline
-  url: https://github.com/CHorne412/ledgerline
-  year: 2026
-  featured: true
-
-- name: pgwatch-lite
-  description: >-
-    A single-binary Postgres query profiler that samples pg_stat_statements and
-    renders a flamegraph of where the time actually goes. Built after one too
-    many slow-query mysteries.
-  tech: [Rust, SQL, SVG]
-  repo: https://github.com/CHorne412/pgwatch-lite
-  url: https://github.com/CHorne412/pgwatch-lite
-  year: 2025
-  featured: true
-
-- name: Tidepool
-  description: >-
-    A job queue for side projects: SQLite-backed, no broker to run, at-least-once
-    delivery with exponential backoff. Powers three of my own apps.
-  tech: [TypeScript, SQLite, Node]
-  repo: https://github.com/CHorne412/tidepool
-  demo: https://tidepool.example.com
-  url: https://github.com/CHorne412/tidepool
-  year: 2025
-  featured: true
-
-- name: dotfiles
-  description: >-
-    Neovim, zsh, and tmux configuration with a one-command bootstrap for a fresh
-    machine. Boring on purpose.
-  tech: [Lua, Shell]
-  repo: https://github.com/CHorne412/dotfiles
-  url: https://github.com/CHorne412/dotfiles
-  year: 2024
-  featured: false
-
-- name: Semaphore Viz
-  description: >-
-    An interactive explainer for concurrency primitives — mutexes, semaphores,
-    channels — rendered as animated timelines you can scrub through.
-  tech: [JavaScript, Canvas]
-  demo: https://CHorne412.github.io/semaphore-viz
-  repo: https://github.com/CHorne412/semaphore-viz
-  url: https://CHorne412.github.io/semaphore-viz
-  year: 2024
-  featured: false
+# Delete the [] below once you add your first entry above.
+[]

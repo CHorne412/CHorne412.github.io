@@ -3,15 +3,15 @@
 # ─────────────────────────────────────────────────────────────
 
 # --- Identity -------------------------------------------------
-title:    Your Name
-tagline:  Software Engineer
-email:    chussyk@gmail.com
-location: City, Country
+title:    Chase Horne
+tagline:  Student at West Virginia University
+email:    chasehorne@hotmail.com
+location: Pittsburgh, USA
 
 # Short blurb used in <meta description> and social cards.
 description: >-
-  Software engineer working on backend systems, developer tooling,
-  and the occasional side project. Writing about what I learn.
+  Chase Horne — student at West Virginia University and aspiring software
+  engineer, based in the Pittsburgh area. Projects and notes on what I'm learning.
 
 # --- URLs -----------------------------------------------------
 # For a USER site (repo named <username>.github.io):
