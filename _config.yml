@@ -4,14 +4,14 @@
 
 # --- Identity -------------------------------------------------
 title:    Chase Horne
-tagline:  Student at West Virginia University
+tagline:  Software Engineer
 email:    chasehorne@hotmail.com
 location: Pittsburgh, USA
 
 # Short blurb used in <meta description> and social cards.
 description: >-
-  Chase Horne — student at West Virginia University and aspiring software
-  engineer, based in the Pittsburgh area. Projects and notes on what I'm learning.
+  Chase Horne — software engineer and recent West Virginia University graduate
+  in the Pittsburgh area, looking for a full-time role. Projects and writing.
 
 # --- URLs -----------------------------------------------------
 # For a USER site (repo named <username>.github.io):

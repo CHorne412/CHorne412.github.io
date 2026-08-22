@@ -1,15 +1,12 @@
 ---
 layout: page
 title: About
-description: Chase Horne — student at West Virginia University and aspiring software engineer.
+description: Chase Horne — software engineer and recent West Virginia University graduate.
 permalink: /about/
 ---
 
-I'm a student at **West Virginia University**, based in the Pittsburgh area,
-working toward a career in software engineering.
-
-I'm looking for a **full-time software engineering role** starting after I
-graduate.
+I'm a recent graduate of **West Virginia University**, based in the Pittsburgh
+area, and I'm looking for a **full-time software engineering role**.
 
 This site is where I collect the things I build and notes on what I'm learning.
 It's brand new — I'm filling it in as I go.
