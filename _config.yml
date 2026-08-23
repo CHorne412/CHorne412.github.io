@@ -10,8 +10,9 @@ location: Pittsburgh, USA
 
 # Short blurb used in <meta description> and social cards.
 description: >-
-  Chase Horne — software engineer and recent West Virginia University graduate
-  in the Pittsburgh area, looking for a full-time role. Projects and writing.
+  Chase Horne — software engineer and recent computer science graduate of West
+  Virginia University, in the Pittsburgh area. Full-stack, systems, and machine
+  learning projects, and notes on what I'm learning.
 
 # --- URLs -----------------------------------------------------
 # For a USER site (repo named <username>.github.io):
@@ -29,7 +30,7 @@ social:
   github:   CHorne412
   # Uncomment and set your handle. Commented-out lines render no link at all,
   # which is better than shipping one that 404s.
-  # linkedin: your-handle
+  linkedin: chase-horne412
   # x:      username
   # bluesky: username.bsky.social
   # mastodon: "https://hachyderm.io/@username"

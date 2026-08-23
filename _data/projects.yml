@@ -1,21 +1,45 @@
-# Your portfolio lives here. Add an entry, a card appears on /projects/ — and
-# on the homepage too if you set `featured: true`.
+# Your portfolio. Add an entry, a card appears on /projects/ — and on the
+# homepage too when `featured: true`.
 #
-# Only list things that exist. Coursework and half-finished side projects are
-# completely fair game; invented ones are not.
-#
-# Copy this block for each project:
-#
-# - name: Project name
-#   description: >-
-#     One or two sentences, plain English: what it does, and what was actually
-#     hard about building it.
-#   tech: [Python, Postgres]          # shown as small chips
-#   repo: https://github.com/CHorne412/project-name
-#   demo: https://example.com          # optional, omit if there isn't one
-#   url:  https://github.com/CHorne412/project-name   # where the title links
-#   year: 2026
-#   featured: true                     # also show on the homepage
+# `repo:` and `demo:` are omitted below because none of this code is on GitHub
+# yet. Push a project, add the line, and a "Code →" link appears on its card.
+# Recruiters click those, so it's the highest-value thing you can do next.
 
-# Delete the [] below once you add your first entry above.
-[]
+- name: Mad Bracket
+  description: >-
+    A sports bracket application backed by a MySQL database of teams,
+    conferences, coaches, and rankings — 5+ related tables and 150+ records.
+    Most of the work was in the schema design and the JOIN queries that
+    aggregate across all four entities, wired into a Python backend that
+    drives the bracket.
+  tech: [Python, MySQL, Git]
+  year: 2026
+  featured: true
+
+- name: Custom Transformer-Based Language Model
+  description: >-
+    A transformer language model built from the ground up in Python —
+    tokenization, training pipeline, and inference — plus a front end that
+    lets you prompt the model and get responses in real time.
+  tech: [Python, NLP, Transformers, Google Colab]
+  year: 2025
+  featured: true
+
+- name: Multitasking Operating System
+  description: >-
+    A multitasking OS written in C, with CPU scheduling, process management
+    via Process Control Blocks, and dynamic memory allocation tracked through
+    Memory Control Blocks. Debugging at this level is unforgiving — a bad
+    pointer doesn't throw, it corrupts something three functions away.
+  tech: [C, Linux, Systems]
+  year: 2025
+  featured: true
+
+- name: Full-Stack Fishing Web Application
+  description: >-
+    A web app that pulls live marine and fishing conditions from NOAA's public
+    API datasets and visualizes them. I built the Node.js backend handling API
+    requests, data processing, and routing, and contributed to the front end.
+  tech: [Node.js, JavaScript, SQL, REST APIs]
+  year: 2024
+  featured: false
