@@ -2,6 +2,7 @@
   Renders one project card.
   Usage: {% include project-card.html project=item %}
   Data shape: see _data/projects.yml
+  `note` explains a missing code link (private repo, someone else's repo, etc.)
 {%- endcomment -%}
 <article class="card">
   <h3 class="card__title">
@@ -13,6 +14,10 @@
   </h3>
 
   <p class="card__desc">{{ include.project.description }}</p>
+
+  {%- if include.project.note %}
+  <p class="card__note">{{ include.project.note }}</p>
+  {%- endif %}
 
   <div class="card__foot">
     {%- if include.project.tech -%}

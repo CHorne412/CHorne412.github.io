@@ -7,12 +7,16 @@
 
 - name: Mad Bracket
   description: >-
-    A sports bracket application backed by a MySQL database of teams,
-    conferences, coaches, and rankings — 5+ related tables and 150+ records.
-    Most of the work was in the schema design and the JOIN queries that
-    aggregate across all four entities, wired into a Python backend that
-    drives the bracket.
-  tech: [Python, MySQL, Git]
+    A March Madness bracket app built by a four-person team. I designed the
+    MySQL schema — conferences, teams, season stats, coaches, saved brackets —
+    and wrote the Flask REST API over it, including the three-table JOIN that
+    returns a team's record and conference in one request.
+  tech: [Python, Flask, MySQL, SQL]
+  note: >-
+    Team project in a teammate's repository. My work: the schema and the
+    Python/Flask backend; the TypeScript frontend was my teammates'.
+  repo: https://github.com/kennethsteuart/CS440-MadBracket
+  url: https://github.com/kennethsteuart/CS440-MadBracket
   year: 2026
   featured: true
 
@@ -27,11 +31,14 @@
 
 - name: Multitasking Operating System
   description: >-
-    A multitasking OS written in C, with CPU scheduling, process management
-    via Process Control Blocks, and dynamic memory allocation tracked through
-    Memory Control Blocks. Debugging at this level is unforgiving — a bad
-    pointer doesn't throw, it corrupts something three functions away.
-  tech: [C, Linux, Systems]
+    A multitasking kernel for 32-bit x86, written in C by a team of four. I
+    worked on the process control blocks and priority-ordered scheduling
+    queues, the command handler and serial driver, and a first-fit heap
+    allocator that splits and coalesces blocks.
+  tech: [C, x86, Systems]
+  note: >-
+    Coursework in a private university repository, so the source isn't mine to
+    publish — the write-up covers the design.
   year: 2025
   featured: true
 

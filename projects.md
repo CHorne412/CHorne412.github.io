@@ -8,8 +8,8 @@ permalink: /projects/
 <div class="wrap wrap--wide">
   <h1>Projects</h1>
   <p style="color:var(--text-muted);max-width:38rem">
-    A few things I've built. Most are open source — the write-ups on the
-    <a href="{{ '/blog/' | relative_url }}">blog</a> go deeper on the parts that were hard.
+    Coursework and side projects. Where the source isn't mine to publish, the
+    card says so.
   </p>
 
   {%- if site.data.projects.size == 0 %}
