@@ -20,13 +20,19 @@
   year: 2026
   featured: true
 
-- name: Custom Transformer-Based Language Model
+- name: Optical RPM Measurement System
   description: >-
-    A transformer language model built from the ground up in Python —
-    tokenization, training pipeline, and inference — plus a front end that
-    lets you prompt the model and get responses in real time.
-  tech: [Python, NLP, Transformers, Google Colab]
-  year: 2025
+    An Arduino system that measures motor speed with a TCRT5000 reflective
+    optical sensor. Each pass of a reflective marker is counted as a single
+    pulse — held by a state flag so one marker crossing the beam doesn't
+    register hundreds of times while it's in view — and pulses per sampling
+    window convert to live RPM over the serial console. I calibrated the analog
+    threshold that separates reflective from non-reflective surfaces, and
+    validated readings against a stroboscope up to 5,000 RPM.
+  tech: [Arduino, C++, Embedded, Sensors]
+  note: >-
+    Course project. The sketch is a single file — happy to share it on request.
+  year: 2026
   featured: true
 
 - name: Multitasking Operating System

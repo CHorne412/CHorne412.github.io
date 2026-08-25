@@ -9,11 +9,11 @@ I'm a recent graduate of **West Virginia University**, based in the Pittsburgh
 area, and I'm looking for a **full-time software engineering role**.
 
 My coursework and projects have pulled me in three directions I'd happily keep
-working in: full-stack web development, low-level systems, and machine
-learning. I've written a multitasking operating system in C, a transformer
-language model in Python, and a full-stack app on top of NOAA's public data —
-and I'm most interested in roles where I keep getting to work close to how
-things actually run.
+working in: backend and database work, low-level systems, and embedded
+programming. I've written a multitasking kernel in C, a Flask API over a MySQL
+schema, and an Arduino system that measures motor RPM off a reflective optical
+sensor — and I'm most interested in roles where I keep getting to work close to
+how things actually run.
 
 ## Education
 
@@ -46,7 +46,7 @@ coursework, reinforcing core computer science concepts.
 
 **Web & backend** — Node.js, REST APIs, full-stack development, data visualization
 
-**AI/ML** — Hugging Face Transformers, NLP, LLMs, tokenization, model training and inference
+**AI/ML** — Hugging Face Transformers, NLP fundamentals, working with pretrained LLMs
 
 **Tools & platforms** — Git, GitHub, Linux, VS Code, Xcode, Google Colab
 
