@@ -42,11 +42,18 @@
   year: 2025
   featured: true
 
-- name: Full-Stack Fishing Web Application
+- name: Tackle App — Fishing Conditions Web App
   description: >-
-    A web app that pulls live marine and fishing conditions from NOAA's public
-    API datasets and visualizes them. I built the Node.js backend handling API
-    requests, data processing, and routing, and contributed to the front end.
-  tech: [Node.js, JavaScript, SQL, REST APIs]
+    A React app for anglers, built by a six-person team for a software
+    engineering course. I built the weather feature: a component that fetches
+    an OpenWeather forecast, reshapes the raw payload into per-day summaries —
+    temperature, wind, humidity, sunrise and sunset — and renders an
+    interactive day picker that opens a detail panel for the day you select.
+  tech: [JavaScript, React, Hooks, REST APIs]
+  note: >-
+    Team project in a course organisation's repository. My contribution was the
+    weather conditions feature.
+  repo: https://github.com/WVU-CS330-2024-08-Group10/tackle-app
+  url: https://github.com/WVU-CS330-2024-08-Group10/tackle-app
   year: 2024
   featured: false
