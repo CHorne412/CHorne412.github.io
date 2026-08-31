@@ -26,9 +26,11 @@
     optical sensor. Each pass of a reflective marker is counted as a single
     pulse — held by a state flag so one marker crossing the beam doesn't
     register hundreds of times while it's in view — and pulses per sampling
-    window convert to live RPM over the serial console. I calibrated the analog
-    threshold that separates reflective from non-reflective surfaces, and
-    validated readings against a stroboscope up to 5,000 RPM.
+    window convert to live RPM over the serial console. I calibrated both the
+    analog threshold separating reflective from non-reflective surfaces and the
+    sampling window itself against a stroboscope, tuning against the reference
+    instrument rather than deriving the timing on paper, and validated the
+    readings up to 5,000 RPM.
   tech: [Arduino, C++, Embedded, Sensors]
   note: >-
     Course project. The sketch is a single file — happy to share it on request.
