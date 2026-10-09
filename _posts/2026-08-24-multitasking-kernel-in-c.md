@@ -136,10 +136,12 @@ ordering, "is the next block adjacent to this one" is unanswerable, so
 neighbouring gaps never coalesced and the walk kept missing space that was
 right there.
 
-How I found it: serial-port print statements, in quantity. There's no debugger
-attached to a kernel booting under QEMU, so the loop was print the pointer,
-boot, read the number, decide it's absurd, move the print somewhere earlier,
-boot again. The moment the fix became obvious was seeing an address roughly
+How I found it: serial-port print statements, in quantity. Our run script
+does pass QEMU's `-s` flag, which exposes a GDB stub on port 1234 — I just
+never reached for it, so the loop was print the pointer, boot, read the
+number, decide it's absurd, move the print somewhere earlier, boot again.
+Learning to attach the debugger would have been faster than the twentieth
+reboot. The moment the fix became obvious was seeing an address roughly
 thirty-two times further along than it should have been — `sizeof(MCB)` is
 sixteen bytes, and a number that wrong doesn't come from logic, it comes from
 units.

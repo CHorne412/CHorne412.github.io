@@ -35,10 +35,8 @@ social:
   # bluesky: username.bsky.social
   # mastodon: "https://hachyderm.io/@username"
 
-# Uncomment once you've actually put a PDF at assets/resume.pdf (or point it
-# at an external link). While it's commented out, no resume link is rendered —
-# that's deliberate, so the site never ships a link to a missing file.
-# resume_url: "/assets/resume.pdf"
+# Case matters on GitHub Pages: this must match the filename exactly.
+resume_url: "/assets/Resume.pdf"
 
 # --- Build ----------------------------------------------------
 plugins:
