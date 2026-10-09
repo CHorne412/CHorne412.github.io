@@ -32,8 +32,8 @@
     instrument rather than deriving the timing on paper, and validated the
     readings up to 5,000 RPM.
   tech: [Arduino, C++, Embedded, Sensors]
-  note: >-
-    Course project. The sketch is a single file — happy to share it on request.
+  repo: https://github.com/CHorne412/Optical-tachometer
+  url: https://github.com/CHorne412/Optical-tachometer
   year: 2026
   featured: true
 
