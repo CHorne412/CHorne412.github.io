@@ -1,1 +1,0 @@
-Replace this file with your actual resume PDF (keep the filename), or point site.resume_url in _config.yml at an external link.
